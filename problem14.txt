@@ -1,0 +1,19 @@
+	from time import *
+	start=clock()
+	import pandas as pd
+	dict1= {}
+	m = 0
+	for n in range(1,1000000):
+	    m=n
+	    mod =0
+	    while n != 2:
+	        if n%2 == 0 :
+	            n = n/2
+	            mod = mod+1
+	        if n%2 != 0 :
+	            n = 3*n+1
+	            mod = mod+1
+	    dict1[m]=mod
+	df = pd.DataFrame.from_dict(dict1,'index')
+	print(df[df[0]==df[0].max()])
+print(clock()-start)
