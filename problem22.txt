@@ -1,0 +1,13 @@
+	
+	with open('./Downloads/address','r+') as df:
+	    a = df.read()
+	a = a.split(',')
+	a.sort()
+	a = [x.strip('"') for x in a]
+	def cun(name):
+	    b = list(name)
+	    b = [ord(x) - 64 for x in b]
+	    return b
+	jk=0
+	for i in range(0, len(a)):
+	    jk = jk + sum(cun(a[i]))*(i+1)
