@@ -1,0 +1,8 @@
+	 with open('p.txt') as fd:
+	    j = fd.read(-1)
+	j = j.replace('\n','')
+	amt =0
+	for i in range(len(j)-13):
+	    top = int(j[i])*int(j[i+1])*int(j[i+2])*int(j[i+3])*int(j[i+4])*int(j[i+5])*int(j[i+6])*int(j[i+7])*int(j[i+8])*int(j[i+9])*int(j[i+10])*int(j[i+11])*int(j[i+12])
+	    if top > amt:
+        amt = top
