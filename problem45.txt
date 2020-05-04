@@ -1,0 +1,10 @@
+from time import *
+start = clock()
+print(start)
+a= set([x*(x+1)/2 for x in range(2,100000)])
+b = set([x*(3*x-1)/2 for x in range(2,100000)])
+c = [x*(2*x-1) for x in range(2,100000)]
+print(a.intersection(b.intersection(c)))
+print(clock()-start)
+print(clock())
+print(start)
