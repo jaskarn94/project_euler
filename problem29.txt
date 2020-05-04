@@ -1,0 +1,7 @@
+	d = []
+	for i in range(2,101):
+	    for j in range(2,101):
+	        d.append(i**j)
+	from collections import Counter
+	distinct_list= (Counter(d).keys())
+len(distinct_list)
