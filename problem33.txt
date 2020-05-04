@@ -1,0 +1,24 @@
+
+	t = []
+	for i, j in itertools.product(range(10,100), range(10,100)):
+	    
+	    if ( (i<j) and (str(i)[0] != str(i)[1]) and (str(j)[0]!=str(j)[1]) and (str(i)[1] != '0') and (str(j)[1]!='0') ):
+	        
+	        for a,b in itertools.product(range(2), range(2)):
+	            if str(i)[a] == str(j)[b]:
+	                c= str(i)
+	                c=c.replace(str(i)[a],'')
+	                d = str(j)
+	                d =d.replace(str(j)[b],'')
+	                #print(i,j,c,d)
+	                try:
+	                    e = (int(c)/int(d))
+	                except ZeroDivisionError:
+	                    e= 0
+	                #print(c,d,e)
+	                #print(h)
+	                h=i/j
+	                if float(e)==float(h):
+	                    t.append(i)
+	                    t.append(j)
+	print(t[1]*t[3]*t[5]*t[7])
