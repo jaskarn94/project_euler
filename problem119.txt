@@ -1,0 +1,6 @@
+	y =[]
+	for z in range(2,200):
+	    for m in range(2,30):
+	        g = z**m
+	        if g == sum(int(digit) for digit in str(g))**m:
+            y.append(g)
