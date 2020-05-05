@@ -1,0 +1,12 @@
+	l = []
+	from itertools import permutations
+	    
+	for c in permutations(str(1234567890),10):
+	        #print(c)
+	        st = ''
+	        for x in c:
+	            st += str(x)
+	        l.append(int(st))
+	l.sort()
+	
+print(l[10**6-1])
