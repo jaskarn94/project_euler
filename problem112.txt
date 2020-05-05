@@ -1,0 +1,15 @@
+	idd = 99
+	j =0
+	y =0
+	i=100
+	while(y<0.99):
+	    
+	    b = ''.join(sorted(str(i)))
+	    if str(i) == b:
+	        idd+=1
+	    elif str(i)== b[::-1]:
+	        idd+=1
+	    else:
+	        j+=1
+	    y = j/(idd+j)
+	    i =i+1
