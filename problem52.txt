@@ -1,0 +1,13 @@
+	def perm(a,b):
+	    c = [int(x) for x in str(a)]
+	    d = [int(x) for x in str(b)]
+	    c.sort()
+	    d.sort()
+	    if c==d:
+	        return True
+	    else:
+	        return False
+	    
+	for x in range(1,300000):
+	    if perm(x,2*x) and perm(2*x,3*x) and perm(3*x,4*x) and perm(4*x,5*x) and perm(5*x,6*x):
+        print(x,2*x,3*x,4*x,5*x,6*x)
