@@ -1,0 +1,7 @@
+	st = ''
+	for i in range(0,1000000):
+	    st += str(i) 
+	b = 1
+	for i in range(7):
+	    b *= int(st[10**i])
+print(b)
