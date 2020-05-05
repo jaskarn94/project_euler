@@ -1,0 +1,7 @@
+ 
+import itertools
+count = 0
+for i,j in itertools.product(range(1,500),range(1,500)):
+    if len(str(i**j)) == j:
+        count= count+1
+print(count)
