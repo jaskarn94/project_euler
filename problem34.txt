@@ -1,0 +1,7 @@
+	b = []
+	for a in range(11,1000000000):
+	    sum =0
+	    for x in str(a):
+	        sum += math.factorial(int(x))
+	    if int(sum)==int(a):
+	        b.append(int(a))
