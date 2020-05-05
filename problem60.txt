@@ -1,0 +1,14 @@
+
+	flag = True
+	while(flag):
+	    for x in a:
+	        for y in a:
+	            if x<y and comb(x,y):
+	                for z in a:
+	                    if z>y and comb(z,x) and comb(z,y):
+	                        for u in a:
+	                            if u>z and comb(u,z) and comb(u,y) and comb(u,x):
+	                                for b in a:
+	                                    if b>u and comb(b,u) and comb(b,z) and comb(b,y) and comb(b,x):
+	                                        print(b+u+z+y+x)
+                                        flag = False
