@@ -1,0 +1,8 @@
+	cubes=[i**3foriinrange(1,10000)]
+	f=[tuple(sorted(str(j)))forjincubes]
+	count={}
+	forjinset(f):
+		count[j]=f.count(j)
+	target=max(count,key=lambdak:count[k])
+	print(f.index(target))
+print((f.index(target)+1)**3)
