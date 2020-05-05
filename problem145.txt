@@ -1,0 +1,14 @@
+	m=0
+	j =0
+	def reverse(s): 
+	    if len(s) == 0: 
+	        return s 
+	    else: 
+	        return reverse(s[1:]) + s[0] 
+	for i in range(11,100000000):
+	    if str(i)[-1]!='0':
+	        b = str(i)
+	        b = int(reverse(b))
+	        d = i+b
+	        if all(int(x)%2 ==1 for x in str(d)):
+            j = j+1
