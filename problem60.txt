@@ -1,4 +1,4 @@
-
+	start =clock()
 	flag = True
 	while(flag):
 	    for x in a:
@@ -11,4 +11,12 @@
 	                                for b in a:
 	                                    if b>u and comb(b,u) and comb(b,z) and comb(b,y) and comb(b,x):
 	                                        print(b+u+z+y+x)
-                                        flag = False
+	                                        flag = False
+	
+	                                        
+	def comb(x,y):
+	    if isprime(str(x)+str(y))and isprime(str(y)+str(x)):
+	        return True 
+	    else:
+	        False                                        
+print(clock()-start)    
