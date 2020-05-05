@@ -1,0 +1,13 @@
+	from sympy import primerange
+	primes =list(primerange(1,10000))
+	limit =50000000
+	squares = [i**2 for i in primes if i**2<limit]
+	cubes = [i**3 for i in primes if i**3< limit]
+	fours = [i**4 for i in primes if i**4<limit]
+	pk = set()
+	for i in squares:
+	    for j in cubes:
+	        for k in fours:
+	            s = i+j+k
+	            if s<limit:
+                pk.add(s)
