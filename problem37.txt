@@ -1,0 +1,14 @@
+	d = list(sympy.primerange(10,10**6))
+	q = []
+	for b in d:
+	    a =0
+	    c =0
+	    for i in range(len(str(b))):
+	        if (isprime(int(str(b)[:(i+1)]))):
+	            a =a +1
+	        if (isprime(int(str(b)[i:]))):
+	            c = c+1
+	    if (a==len(str(b))) and (c==len(str(b))):
+	        q.append(b)
+	        
+print(sum(q))
